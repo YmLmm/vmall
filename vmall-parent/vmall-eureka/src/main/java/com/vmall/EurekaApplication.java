@@ -1,4 +1,4 @@
-package com.mall;
+package com.vmall;
 
 /*
  * @ClassName: EurekaApplication
@@ -16,7 +16,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @EnableEurekaServer
 public class EurekaApplication {
 
-    /**
+    /*
     * @Description: Load the startup class as the current configuration standard for springboot
     * @Param: [args]
     * @return: void
