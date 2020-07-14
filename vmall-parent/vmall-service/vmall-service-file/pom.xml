@@ -3,27 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>vmall-parent</artifactId>
+        <artifactId>vmall-service</artifactId>
         <groupId>com.vmall</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>vmall-service</artifactId>
-    <packaging>pom</packaging>
 
-    <description>
-        商城微服务父工程
-    </description>
-    <modules>
-        <module>vmall-service-goods</module>
-        <module>vmall-service-file</module>
-    </modules>
+    <artifactId>vmall-service-file</artifactId>
 
+    <!--依赖包-->
     <dependencies>
+        <!--FastDFS客户端程序包-->
+        <dependency>
+            <groupId>net.oschina.zcx7878</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.27.0.0</version>
+        </dependency>
         <dependency>
             <groupId>com.vmall</groupId>
-            <artifactId>vmall-common-db</artifactId>
+            <artifactId>vmall-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 </project>

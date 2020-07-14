@@ -20,7 +20,6 @@
         <module>vmall-eureka</module>
         <module>vmall-common</module>
         <module>vmall-common-db</module>
-        <module>vmall-service-file</module>
     </modules>
 
     <parent>
