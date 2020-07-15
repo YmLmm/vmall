@@ -12,9 +12,9 @@ import com.github.pagehelper.PageInfo;
 import com.vmall.dao.BrandMapper;
 import com.vmall.goods.pojo.Brand;
 import com.vmall.service.BrandService;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -40,7 +40,7 @@ public class BrandServiceImpl implements BrandService {
         Example example = createExample(brand);
         List<Brand> brands = brandMapper.selectByExample(example);
         //封装
-        return new PageInfo<Brand>(brands);
+    return new PageInfo<Brand>(brands);
     }
 
     /***
